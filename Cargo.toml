@@ -1,0 +1,26 @@
+[package]
+name = "libman"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = { version = "1.0.102" }
+argon2 = "0.5.3"
+async-trait = { version = "0.1.89" }
+axum = { version = "0.8.9", features = ["macros"] }
+axum-extra = { version = "0.12.6", features = ["cookie"] }
+chrono = "0.4.44"
+dotenvy = { version = "0.15.7" }
+envy = { version = "0.4.2" }
+jsonwebtoken = { version = "10.4.0", features = ["rust_crypto"] }
+rand = "0.8.5"
+reqwest = { version = "0.13.3", features = ["json"] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = { version = "1.0.149" }
+sqlx = { version = "0.8.6", features = ["sqlite", "runtime-tokio", "macros", "migrate"] }
+thiserror = { version = "2.0.18" }
+tokio = { version = "1.52.3", features = ["full"] }
+tower-http = { version = "0.6.11", features = ["cors", "trace", "compression-gzip"] }
+tracing = { version = "0.1.44" }
+tracing-subscriber = { version = "0.3.23", features = ["env-filter", "json"] }
+validator = "0.20.0"
